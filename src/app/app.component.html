@@ -1,0 +1,52 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title class="titulo"><h2>Menu</h2></ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="['/home']">
+              <ion-icon name="person-outline" slot="start"></ion-icon>
+              <h4 class="titulo">Inicio</h4>              
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="['/actividades']">
+              <ion-icon name="rose-outline" slot="start"></ion-icon>
+              <h4 class="titulo">Mis hobbies</h4> 
+            </ion-item>
+          </ion-menu-toggle>
+
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="['/gustos']">
+              <ion-icon name="heart-circle-outline" slot="start"></ion-icon>
+              <h4 class="titulo">Algunos gustos</h4>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="['/peliculas']">
+              <ion-icon name="film-outline" slot="start"></ion-icon>
+              <h4 class="titulo">Algunas movies</h4>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerLink]="['/recuerdos']">
+              <ion-icon name="images-outline" slot="start"></ion-icon>
+              <h4 class="titulo">Recuerdos</h4>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
